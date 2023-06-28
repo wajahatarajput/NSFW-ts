@@ -59,7 +59,7 @@ function App() {
   );
 
   return (
-    <div className="app">
+    <div className="App">
       {!model ? (
         <>Loading </>
       ) : (
@@ -67,7 +67,7 @@ function App() {
           {renderInput()}
           {imageURL && renderPreview()}
           {!!predictions.length && <TagsContainer predictions={predictions} />}
-          {isNSFW && <h1 style={{backgroundColor:'red'}}> Blur Image using Mantine Overlay </h1>}
+          {isNSFW && <h1 style={{backgroundColor:'red', padding:'20px'}}> Blur Image using Mantine Overlay </h1>}
         </>
       )}
     </div>
